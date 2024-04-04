@@ -1,0 +1,33 @@
+{
+	"name": "Story Testnet",
+	"chain": "StoryTestnet",
+	"rpc": ["https://story-network.rpc.caldera.xyz/http"],
+	"faucets": [],
+	"nativeCurrency": {
+		"name": "Ether",
+		"symbol": "ETH",
+		"decimals": 18
+	},
+	"features": [{ "name": "EIP155" }, { "name": "EIP1559" }],
+	"infoURL": "https://www.storyprotocol.xyz/",
+	"shortName": "story-testnet",
+	"chainId": 1513,
+	"networkId": 1513,
+	"explorers": [
+		{
+			"name": "Blockscout Explorer",
+			"url": "https://story-network.explorer.caldera.xyz",
+			"standard": "EIP3091"
+		},
+		{
+			"name": "SocialScan Explorer",
+			"url": "https://story-testnet.socialscan.io",
+			"standard": "EIP3091"
+		}
+	],
+	"parent": {
+		"type": "L2",
+		"chain": "eip155-11155111",
+		"bridges": [{ "url": "https://story-network.bridge.caldera.xyz/" }]
+	}
+}
